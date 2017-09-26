@@ -7,13 +7,18 @@ If the letter doesn't exist, print out "Nope, that letter doesn't exist in my wo
 
 (function() {
 
-let word = "mississippi"
+// let word = "mississippi"
 
-let letter = "s"
+// let letter = "s"
+
+function hangman(letter, word){
+
+
+
 
 var matches = word.split(letter).length-1;
 
-console.log(word.split(letter));
+// console.log(word.split(letter));
 
 
 //console.log(word.indexOf(letter));
@@ -23,13 +28,18 @@ result = (word.indexOf(letter));
 //console.log(result);
 
 if(result < 0) {
-  console.log("Nope, that letter " + letter + " doesn't exist in my word.");
+  return "Nope, that letter " + letter + " doesn't exist in my word.";
 }
 
 else{
-  console.log("Yeah, the letter " + letter + " exists " + matches + " times in my word");
+  return "Yeah, the letter " + letter + " exists " + matches + " times in my word";
 
 }
+
+}
+
+module.exports = hangman
+
 
 
 }());

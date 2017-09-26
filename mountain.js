@@ -6,8 +6,18 @@ tallest of the available mountains and prints it out.
 
 (function(){
 
-let height=[7, 13, 9, 19, 14, 24, 12];
+  function tallestMountain(height){
+    return Math.max(...height);
+  }
 
+  module.exports = tallestMountain
+
+// let height=[7, 13, 9, 19, 14, 24, 12];
+
+// console.log(Math.max(...height));
+
+
+/*
 height.sort(function(a, b){
   return a-b});
 
@@ -16,5 +26,7 @@ console.log(height);
 height.reverse();
 
 console.log(height[0]);
+*/
+
 
 }());

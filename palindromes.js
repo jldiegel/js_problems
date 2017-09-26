@@ -7,6 +7,7 @@ if word is a palindrome, or "false" if its not.
 
 (function() {
 
+/*
   let word = "hannah"
 
   let wordArray = word.split("")
@@ -26,5 +27,18 @@ if word is a palindrome, or "false" if its not.
     console.log("FALSO. The word " + word + " is not a palindrome");
 
   }
+*/
+
+  function isPalindrome(word){
+    return word == word.split("").reverse().join("");
+
+  }
+
+  module.exports = isPalindrome
+
+  // console.log(isPalindrome("bob"));
+  // console.log(isPalindrome("Jeramiah"));
+
+
 
 })();

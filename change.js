@@ -13,23 +13,44 @@ code runs that looks like [2, 0, 1, 2] (two twenties, 0 tens, 1 five, 2 ones).
 
 (function() {
 
-let amount = 66
+// let amount = 66
 
-let twenties = ~~(amount/20);
-let amount2 = amount - (twenties * 20);
+// let twenties = ~~(amount/20);
+// let amount2 = amount - (twenties * 20);
 
-let tens = ~~(amount2/10);
-let amount3 = amount2 - (tens * 10);
+// let tens = ~~(amount2/10);
+// let amount3 = amount2 - (tens * 10);
 
-let fives = ~~(amount3/5)
-let amount4 = amount3 - (fives * 5);
+// let fives = ~~(amount3/5)
+// let amount4 = amount3 - (fives * 5);
 
-let ones = ~~(amount4/1)
-let amount5 = amount4 - (ones * 1)
+// let ones = ~~(amount4/1)
+// let amount5 = amount4 - (ones * 1)
 
-let bills = [twenties, tens, fives, ones]
+// let bills = [twenties, tens, fives, ones]
 
-console.log(bills);
+// console.log(bills);
+
+function change(amount){
+
+    let twenties = ~~(amount/20);
+    let amount2 = amount - (twenties * 20);
+    
+    let tens = ~~(amount2/10);
+    let amount3 = amount2 - (tens * 10);
+    
+    let fives = ~~(amount3/5)
+    let amount4 = amount3 - (fives * 5);
+    
+    let ones = ~~(amount4/1)
+    let amount5 = amount4 - (ones * 1)
+    
+    let bills = [twenties, tens, fives, ones]
+
+    return bills
+}
+
+module.exports = change
 
 
 //console.log(amount);

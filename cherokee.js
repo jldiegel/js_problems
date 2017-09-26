@@ -14,14 +14,23 @@ decimal values, i.e. 10% would be 0.1 instead of 10.
 
 (function() {
 
-var startingPopulation = 200;
-var birthRate = 0.1;
-var numberOfWeeks = 5;
+// var startingPopulation = 200;
+// var birthRate = 0.1;
+// var numberOfWeeks = 5;
 
-var hares = (startingPopulation + (startingPopulation * birthRate * numberOfWeeks))
+function harePop(startingPopulation, birthRate, numberOfWeeks){
+    return (startingPopulation + (startingPopulation * birthRate * numberOfWeeks))
+    
+}
+
+// var hares = (startingPopulation + (startingPopulation * birthRate * numberOfWeeks))
 
 
-console.log("There will be " + hares + " Cherokee Hares after " + numberOfWeeks + " weeks")
+// console.log("There will be " + hares + " Cherokee Hares after " + numberOfWeeks + " weeks")
+
+
+
+  module.exports = harePop
 
 
 })();
